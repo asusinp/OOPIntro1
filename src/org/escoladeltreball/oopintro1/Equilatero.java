@@ -9,13 +9,13 @@ package org.escoladeltreball.oopintro1;
  */
 public class Equilatero extends Triangle {
 
+	protected double side;
+	
 	/**
-	 * @param base
-	 * @param height
+	 * @param side
 	 */
-	public Equilatero(double base, double height) {
-		super(base, height);
-		// TODO Auto-generated constructor stub
+	public Equilatero(double side) {	
+		this.side = side;
 	}
 
 	/* (non-Javadoc)
@@ -23,8 +23,17 @@ public class Equilatero extends Triangle {
 	 */
 	@Override
 	public double perimeter() {
-		// TODO Auto-generated method stub
-		return base + height;
+		return side * 3;
 	}
+	
+	/* (non-Javadoc)
+	 * @see org.escoladeltreball.oopintro1.Figure#area()
+	 */
+	@Override
+	public double area() {
+		return (Math.pow(3, 1.0/3.0) / 4) * Math.pow(side, 2);
+	}
+
+
 
 }

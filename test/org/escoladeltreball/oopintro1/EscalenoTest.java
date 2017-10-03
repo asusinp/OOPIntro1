@@ -38,7 +38,7 @@ public class EscalenoTest {
 	 */
 	@Before
 	public void setUp() throws Exception {
-		escaleno = new Escaleno(5,2);
+		escaleno = new Escaleno(4,2,3);
 	}
 
 	/**
@@ -54,14 +54,14 @@ public class EscalenoTest {
 	 */
 	@Test
 	public void testPerimeter() {
-		assertEquals(12, escaleno.perimeter(), 1.0e-4);
+		assertEquals(9, escaleno.perimeter(), 1.0e-4);
 	}
 	/**
 	 * Test method for {@link org.escoladeltreball.oopintro1.Triangle#area()}.
 	 */
 	@Test
 	public void testArea() {
-		assertEquals(5, escaleno.area(), 1.0e-4);
+		assertEquals(2.9047, escaleno.area(), 1.0e-4);
 	}
 
 }
